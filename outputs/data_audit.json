@@ -1,0 +1,185 @@
+{
+  "shape": [
+    1686,
+    16
+  ],
+  "columns": [
+    "unique_id",
+    "Painting",
+    "On a scale of 1\u201310, how intense is the emotion conveyed by the artwork?",
+    "Describe how this painting makes you feel.",
+    "This art piece makes me feel sombre.",
+    "This art piece makes me feel content.",
+    "This art piece makes me feel calm.",
+    "This art piece makes me feel uneasy.",
+    "How many prominent colours do you notice in this painting?",
+    "How many objects caught your eye in the painting?",
+    "How much (in Canadian dollars) would you be willing to pay for this painting?",
+    "If you could purchase this painting, which room would you put that painting in?",
+    "If you could view this art in person, who would you want to view it with?",
+    "What season does this art piece remind you of?",
+    "If this painting was a food, what would be?",
+    "Imagine a soundtrack for this painting. Describe that soundtrack without naming any objects in the painting."
+  ],
+  "classifications": {
+    "unique_id": "numerical",
+    "Painting": "categorical",
+    "On a scale of 1\u201310, how intense is the emotion conveyed by the artwork?": "numerical",
+    "Describe how this painting makes you feel.": "text",
+    "This art piece makes me feel sombre.": "categorical",
+    "This art piece makes me feel content.": "categorical",
+    "This art piece makes me feel calm.": "categorical",
+    "This art piece makes me feel uneasy.": "categorical",
+    "How many prominent colours do you notice in this painting?": "numerical",
+    "How many objects caught your eye in the painting?": "numerical",
+    "How much (in Canadian dollars) would you be willing to pay for this painting?": "text (or high-cardinality categorical)",
+    "If you could purchase this painting, which room would you put that painting in?": "text (or high-cardinality categorical)",
+    "If you could view this art in person, who would you want to view it with?": "text (or high-cardinality categorical)",
+    "What season does this art piece remind you of?": "categorical",
+    "If this painting was a food, what would be?": "text (or high-cardinality categorical)",
+    "Imagine a soundtrack for this painting. Describe that soundtrack without naming any objects in the painting.": "text"
+  },
+  "label_column": "Painting",
+  "student_id_column": "unique_id",
+  "issues": [
+    {
+      "type": "missing",
+      "column": "On a scale of 1\u201310, how intense is the emotion conveyed by the artwork?",
+      "count": 65,
+      "pct": 3.855278766310795
+    },
+    {
+      "type": "missing",
+      "column": "Describe how this painting makes you feel.",
+      "count": 75,
+      "pct": 4.448398576512456
+    },
+    {
+      "type": "missing",
+      "column": "This art piece makes me feel sombre.",
+      "count": 70,
+      "pct": 4.151838671411625
+    },
+    {
+      "type": "missing",
+      "column": "This art piece makes me feel content.",
+      "count": 72,
+      "pct": 4.270462633451958
+    },
+    {
+      "type": "missing",
+      "column": "This art piece makes me feel calm.",
+      "count": 71,
+      "pct": 4.211150652431791
+    },
+    {
+      "type": "missing",
+      "column": "This art piece makes me feel uneasy.",
+      "count": 71,
+      "pct": 4.211150652431791
+    },
+    {
+      "type": "missing",
+      "column": "How many prominent colours do you notice in this painting?",
+      "count": 74,
+      "pct": 4.389086595492289
+    },
+    {
+      "type": "missing",
+      "column": "How many objects caught your eye in the painting?",
+      "count": 74,
+      "pct": 4.389086595492289
+    },
+    {
+      "type": "missing",
+      "column": "How much (in Canadian dollars) would you be willing to pay for this painting?",
+      "count": 75,
+      "pct": 4.448398576512456
+    },
+    {
+      "type": "missing",
+      "column": "If you could purchase this painting, which room would you put that painting in?",
+      "count": 80,
+      "pct": 4.744958481613286
+    },
+    {
+      "type": "missing",
+      "column": "If you could view this art in person, who would you want to view it with?",
+      "count": 76,
+      "pct": 4.507710557532621
+    },
+    {
+      "type": "missing",
+      "column": "What season does this art piece remind you of?",
+      "count": 76,
+      "pct": 4.507710557532621
+    },
+    {
+      "type": "missing",
+      "column": "If this painting was a food, what would be?",
+      "count": 74,
+      "pct": 4.389086595492289
+    },
+    {
+      "type": "missing",
+      "column": "Imagine a soundtrack for this painting. Describe that soundtrack without naming any objects in the painting.",
+      "count": 85,
+      "pct": 5.041518386714116
+    },
+    {
+      "type": "outlier",
+      "column": "On a scale of 1\u201310, how intense is the emotion conveyed by the artwork?",
+      "count": 1
+    },
+    {
+      "type": "outlier",
+      "column": "How many prominent colours do you notice in this painting?",
+      "count": 52
+    },
+    {
+      "type": "outlier",
+      "column": "How many objects caught your eye in the painting?",
+      "count": 54
+    },
+    {
+      "type": "short_response",
+      "column": "Describe how this painting makes you feel.",
+      "count": 306
+    },
+    {
+      "type": "short_response",
+      "column": "How much (in Canadian dollars) would you be willing to pay for this painting?",
+      "count": 1502
+    },
+    {
+      "type": "short_response",
+      "column": "If you could purchase this painting, which room would you put that painting in?",
+      "count": 1244
+    },
+    {
+      "type": "short_response",
+      "column": "If you could view this art in person, who would you want to view it with?",
+      "count": 1149
+    },
+    {
+      "type": "short_response",
+      "column": "If this painting was a food, what would be?",
+      "count": 1127
+    },
+    {
+      "type": "html_artifacts",
+      "column": "Imagine a soundtrack for this painting. Describe that soundtrack without naming any objects in the painting.",
+      "count": 1
+    },
+    {
+      "type": "short_response",
+      "column": "Imagine a soundtrack for this painting. Describe that soundtrack without naming any objects in the painting.",
+      "count": 179
+    }
+  ],
+  "class_distribution": {
+    "The Persistence of Memory": 562,
+    "The Starry Night": 562,
+    "The Water Lily Pond": 562
+  }
+}

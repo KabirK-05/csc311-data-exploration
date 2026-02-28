@@ -1,0 +1,71 @@
+{
+  "likert_means": {
+    "Sombre": {
+      "The Persistence of Memory": 3.9079189686924494,
+      "The Starry Night": 2.7616387337057726,
+      "The Water Lily Pond": 1.6436567164179106
+    },
+    "Content": {
+      "The Persistence of Memory": 2.149171270718232,
+      "The Starry Night": 3.6175373134328357,
+      "The Water Lily Pond": 4.407476635514018
+    },
+    "Calm": {
+      "The Persistence of Memory": 2.6464088397790055,
+      "The Starry Night": 3.912313432835821,
+      "The Water Lily Pond": 4.472014925373134
+    },
+    "Uneasy": {
+      "The Persistence of Memory": 3.848987108655617,
+      "The Starry Night": 2.1063432835820897,
+      "The Water Lily Pond": 1.3563432835820894
+    }
+  },
+  "price_stats": {
+    "valid_count": 1598,
+    "median": 100.0,
+    "mean": 6.257828535669587e+26,
+    "p99": 401499999.9999986
+  },
+  "top_correlations": [
+    {
+      "feature1": "Sombre",
+      "feature2": "Content",
+      "correlation": -0.595
+    },
+    {
+      "feature1": "Sombre",
+      "feature2": "Calm",
+      "correlation": -0.487
+    },
+    {
+      "feature1": "Sombre",
+      "feature2": "Uneasy",
+      "correlation": 0.655
+    },
+    {
+      "feature1": "Content",
+      "feature2": "Calm",
+      "correlation": 0.692
+    },
+    {
+      "feature1": "Content",
+      "feature2": "Uneasy",
+      "correlation": -0.715
+    },
+    {
+      "feature1": "Calm",
+      "feature2": "Uneasy",
+      "correlation": -0.711
+    }
+  ],
+  "split": {
+    "train_students": 337,
+    "val_students": 112,
+    "test_students": 113,
+    "train_rows": 1011,
+    "val_rows": 336,
+    "test_rows": 339,
+    "leakage_check": "PASSED"
+  }
+}
